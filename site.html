@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f0ea">
+  <meta name="description" content="VELORA STUDIO — frumusețe, îngrijire și stil.">
+  <title>VELORA STUDIO | Beauty & Care</title>
+  <style>
+    :root {
+      --cream: #f7f0ea;
+      --dark: #292522;
+      --pink: #d8a8ae;
+      --muted: #746b65;
+      --white: #fffdfb;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--cream);
+      color: var(--dark);
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+    header {
+      padding: 20px 6%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      border-bottom: 1px solid #e7dcd3;
+    }
+    .logo {
+      font-family: Georgia, serif;
+      font-size: 22px;
+      letter-spacing: 3px;
+    }
+    nav a {
+      color: var(--dark);
+      text-decoration: none;
+      margin-left: 14px;
+      font-size: 13px;
+    }
+    .hero {
+      min-height: 530px;
+      padding: 70px 7%;
+      display: flex;
+      align-items: center;
+      background:
+        linear-gradient(90deg, rgba(30,24,22,.72), rgba(30,24,22,.08)),
+        url("https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1600&q=85")
+        center/cover;
+      color: white;
+    }
+    .hero-content { max-width: 520px; }
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-size: 11px;
+    }
+    h1, h2, h3 { font-family: Georgia, serif; font-weight: normal; }
+    h1 { font-size: clamp(42px, 9vw, 70px); line-height: 1.06; }
+    h2 { font-size: clamp(30px, 6vw, 43px); margin: 0 0 16px; }
+    .hero p { max-width: 400px; }
+    .btn {
+      display: inline-block;
+      padding: 13px 22px;
+      background: var(--dark);
+      color: white;
+      text-decoration: none;
+      border: 0;
+      cursor: pointer;
+      margin-top: 15px;
+      font-size: 13px;
+      letter-spacing: 1px;
+    }
+    .hero .btn { background: var(--pink); color: var(--dark); }
+    section { padding: 68px 7%; }
+    .center { text-align: center; }
+    .intro { max-width: 620px; margin: 0 auto 34px; color: var(--muted); }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+      margin-top: 35px;
+    }
+    .service {
+      background: var(--white);
+      padding: 25px 20px;
+      border-bottom: 3px solid var(--pink);
+    }
+    .service h3 { font-size: 24px; margin: 10px 0; }
+    .price { font-weight: bold; }
+    .about {
+      background: #e9dcd3;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 36px;
+      align-items: center;
+    }
+    .about img, .gallery img {
+      display: block;
+      width: 100%;
+      object-fit: cover;
+    }
+    .about img { height: 340px; }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 28px;
+    }
+    .gallery img { height: 230px; }
+    .contact { background: var(--white); }
+    .contact p { color: var(--muted); }
+    footer {
+      padding: 24px;
+      text-align: center;
+      background: var(--dark);
+      color: white;
+      font-size: 12px;
+    }
+    @media (max-width: 650px) {
+      header { align-items: flex-start; flex-direction: column; }
+      nav a { margin: 0 12px 0 0; }
+      .hero { min-height: 470px; padding: 55px 7%; }
+      .services { grid-template-columns: 1fr; }
+      .about { grid-template-columns: 1fr; }
+      .about img { height: 250px; }
+      .gallery { grid-template-columns: 1fr 1fr; }
+      .gallery img { height: 160px; }
+      section { padding: 52px 6%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">VELORA STUDIO</div>
+    <nav>
+      <a href="#servicii">Servicii</a>
+      <a href="#despre">Despre</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Beauty · Care · Confidence</p>
+        <h1>Frumusețea ta, în stilul tău.</h1>
+        <p>Un moment pentru tine. Îngrijire atentă, stil modern și o experiență relaxantă.</p>
+        <a class="btn" href="#contact">PROGRAMEAZĂ-TE</a>
+      </div>
+    </section>
+
+    <section id="servicii" class="center">
+      <p class="eyebrow">Ce îți oferim</p>
+      <h2>Serviciile noastre</h2>
+      <p class="intro">Alege serviciul potrivit și bucură-te de un moment dedicat ție.</p>
+      <div class="services">
+        <article class="service">
+          <h3>Manichiură</h3>
+          <p>Unghii elegante și îngrijire atentă.</p>
+          <p class="price">De la 250 MDL</p>
+        </article>
+        <article class="service">
+          <h3>Coafură</h3>
+          <p>Un stil care te reprezintă.</p>
+          <p class="price">De la 300 MDL</p>
+        </article>
+        <article class="service">
+          <h3>Sprâncene</h3>
+          <p>Formă naturală și aspect îngrijit.</p>
+          <p class="price">De la 150 MDL</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="despre" class="about">
+      <img
+        src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=900&q=80"
+        alt="Interior luminos de salon"
+        loading="lazy">
+      <div>
+        <p class="eyebrow">Povestea noastră</p>
+        <h2>Frumusețe cu atenție la detalii.</h2>
+        <p>La VELORA STUDIO, credem că fiecare persoană merită timp pentru sine. Ne dorim să oferim servicii atent realizate într-un spațiu primitor și modern.</p>
+        <a class="btn" href="#contact">Hai să ne cunoaștem</a>
+      </div>
+    </section>
+
+    <section class="center">
+      <p class="eyebrow">Atmosfera noastră</p>
+      <h2>Un spațiu creat pentru tine</h2>
+      <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&w=700&q=80" alt="Salon modern" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=700&q=80" alt="Manichiură elegantă" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=700&q=80" alt="Servicii de coafură" loading="lazy">
+      </div>
+    </section>
+
+    <section id="contact" class="contact center">
+      <p class="eyebrow">Următorul tău moment de răsfăț</p>
+      <h2>Hai să facem o programare!</h2>
+      <p>Scrie-ne pe WhatsApp pentru detalii și programări.</p>
+      <!-- Înlocuiește numărul de mai jos cu cel al clientului. -->
+      <a class="btn" href="https://wa.me/37360000000" target="_blank" rel="noopener">
+        SCRIE-NE PE WHATSAPP
+      </a>
+      <p>Program demonstrativ: Luni–Vineri, 09:00–19:00</p>
+      <p>Adresă: de completat</p>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 VELORA STUDIO · Site demonstrativ, salon fictiv
+  </footer>
+</body>
+</html>
